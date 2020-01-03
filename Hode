@@ -1,0 +1,83 @@
+lear
+
+
+figlet "Tools-Y"
+
+
+echo""
+echo $b "  ████████";
+echo $b " █▄█████▄█         ●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●";
+echo $b " █ ▼▼▼▼▼  - _ --_- ||Pembuat:Ali maulana|| ";
+echo $b " █    _-_-- -_ --_ ||FB:Nahodong Jarjit || ";
+echo $b " █ ▲▲▲▲▲ --  - _-- ||IG:DJ PAK ALI.     ||";
+echo $b " █████████         «==========✧==========»";
+echo $b "  ██ ██";
+
+date | lolcat
+
+echo $b ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ | lolcat
+echo -e $b#Ali Maulana# |lolcat
+echo $b ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ | lolcat
+
+
+echo  $b "1. Install Nmap${enda}";
+echo  $b "2. Install Admin-finder${endcla}";
+echo  $b "3. Install RED_HAWK${enda}";
+echo  $b "4. Install Lazymux${enda}";
+echo  $b "00. Exit${enda}";
+echo  "╭─[PILIH NOMORNYA]"
+read -p  "   ╰─root@./ALI MAULANA=" pil;
+# Nmap
+
+case $pil in
+1) pkg install nmap
+echo -e "${y} {1} Masukkan Web${endc}:"
+read web
+nmap $web
+echo
+
+;;
+
+#Install  admin-finder
+
+2) git clone https://github.com/the-c0d3r/admin-finder.git
+echo -e "${y} cara menggunakan admin finder"
+echo -e "${y} cd admin-finder"
+echo -e "${y} python admin-finder.py"
+
+echo
+
+;;
+
+#Install RED_HAWK
+
+3) git clone https://github.com/Tuhinshubhra/RED_HAWK
+echo -e "${y} Installer RED_HAWK..."
+echo -e "${y} cd RED_HAWK"
+echo -e "${y} php r_hawk.php"
+
+
+;;
+
+#Install Lazymux
+
+4) git clone https://github.com/Gameye98/Lazymux
+echo -e "${y} Installer Lazymux..."
+echo -e "${y} cd Lazymux"
+echo -e "${y} python2 lazymux.py"
+
+
+;;
+
+#Install Tools-X
+
+5) git clone https://github.com/Rajkumrdusad/Tool-X
+echo -e "${y} Installer Tool-X..."
+echo -e "${y} cd Tool-X"
+echo -e "${y} ./install.aex"
+
+
+;;
+00)
+exit
+;;
